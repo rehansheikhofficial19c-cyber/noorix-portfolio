@@ -40,4 +40,23 @@ document.addEventListener('DOMContentLoaded',()=>{
     const message=['Project enquiry — Noorix Digital Lab','','Name: '+data.get('fullname'),'Email: '+data.get('email'),'Service: '+(data.get('service')||'Not specified'),'','Project details:',data.get('message')].join('\n');
     window.open('https://wa.me/923154429417?text='+encodeURIComponent(message),'_blank','noopener,noreferrer');
   });
+
+  // Custom sky-blue cursor on mouse devices only
+  if(window.matchMedia('(hover: hover) and (pointer: fine)').matches){
+    document.body.classList.add('noorix-cursor-on');
+    const dot=document.createElement('span'),ring=document.createElement('span');
+    dot.className='noorix-cursor-dot';ring.className='noorix-cursor-ring';
+    dot.setAttribute('aria-hidden','true');ring.setAttribute('aria-hidden','true');
+    document.body.append(ring,dot);
+    let x=innerWidth/2,y=innerHeight/2,rx=x,ry=y;
+    document.addEventListener('pointermove',e=>{x=e.clientX;y=e.clientY;dot.style.transform='translate('+x+'px,'+y+'px) translate(-50%,-50%)'},{passive:true});
+    const follow=()=>{rx+=(x-rx)*.19;ry+=(y-ry)*.19;ring.style.transform='translate('+rx+'px,'+ry+'px) translate(-50%,-50%)';requestAnimationFrame(follow)};follow();
+    document.querySelectorAll('a,button,input,textarea,select,[role="button"]').forEach(el=>{
+      el.addEventListener('pointerenter',()=>ring.classList.add('is-hover'));
+      el.addEventListener('pointerleave',()=>ring.classList.remove('is-hover'));
+    });
+    document.addEventListener('pointerdown',()=>ring.classList.add('is-hover'));
+    document.addEventListener('pointerup',()=>ring.classList.remove('is-hover'));
+  }
+
 });
