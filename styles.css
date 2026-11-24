@@ -1883,3 +1883,61 @@ textarea.form-input::-webkit-resizer { display: none; }
 /* Noorix Digital Lab adaptation */
 :root{--orange-yellow-crayola:hsl(211,100%,62%);--vegas-gold:hsl(211,85%,58%);--text-gradient-yellow:linear-gradient(to right,#1684ff,#55c6ff);--bg-gradient-yellow-1:linear-gradient(to bottom right,#1684ff,#173a60);--bg-gradient-yellow-2:linear-gradient(135deg,#1684ff44,#173a60),#171a20}
 body{background:#080d15}.sidebar,.main-content>article{background:#101722;border-color:#263548}.sidebar{background:linear-gradient(160deg,#111d2b,#0b111b)}.avatar-box{background:#071426;border:1px solid #244a70;border-radius:16px;width:80px;height:80px;display:grid;place-items:center}.avatar-box .brandmark{font:700 25px Poppins;color:#fff;letter-spacing:-3px}.avatar-box .brandmark span{color:#1684ff}.info-content .name{font-size:19px;font-weight:600}.info-content .title{background:#152c46;color:#8dc6ff}.service-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.service-item{min-height:155px;display:flex;align-items:flex-start;gap:14px}.service-icon-box{font-size:25px;color:#4aa9ff;min-width:40px}.service-content-box{text-align:left;flex:1}.service-item-text{font-size:13px}.service-item-title{font-size:15px}.article-title{text-transform:none}.article-title:after{background:linear-gradient(90deg,#087bff,#42c5ff)}.project-img img{width:100%;height:190px;object-fit:cover;transition:.35s}.project-item>a{height:100%;display:block}.project-item:hover img{transform:scale(1.04)}.project-title{margin-top:10px}.project-category{color:#91a4ba}.about-text strong,.timeline-item-title{color:#f1f6fc}.about-text p,.timeline-text{line-height:1.85}.skills-item data{color:#8bc7ff}.skill-progress-fill{background:linear-gradient(90deg,#087bff,#43c5ff)}.contact-item address{max-width:210px}.mapbox iframe{width:100%;height:260px;border:0;filter:grayscale(.8) invert(.9) contrast(.9)}.form-btn{background:linear-gradient(110deg,#087bff,#1455a4);color:white;cursor:pointer}.form-input{color:#fff}.form-input::placeholder{color:#8293a8}.navbar{background:#111a26e8;border-color:#27394d}.navbar-link.active{color:#48b8ff}.service-icon-box ion-icon{font-size:30px}.main-content>article{min-height:650px}.article-title{margin-bottom:24px}.timeline-list{margin-left:10px}.project-list{gap:25px}.project-visit{display:inline-flex;margin-top:12px;padding:10px 14px;background:#087bff;color:#fff;border-radius:8px;font-size:12px;font-weight:600}.contact-line a{color:#a9cfff}@media(max-width:580px){.service-list{grid-template-columns:1fr}.service-item{min-height:0}.avatar-box{width:60px;height:60px}.avatar-box .brandmark{font-size:20px}.info-content .name{font-size:16px}.project-img img{height:170px}}
+/* Noorix vibrant blue refresh — keeps the original vCard layout */
+:root{
+ --orange-yellow-crayola:#45b4ff;
+ --vegas-gold:#2395ff;
+ --text-gradient-yellow:linear-gradient(100deg,#57c7ff 0%,#2588ff 48%,#8a7dff 100%);
+ --bg-gradient-yellow-1:linear-gradient(135deg,#168cff 0%,#2453bd 100%);
+ --bg-gradient-yellow-2:linear-gradient(135deg,rgba(20,133,255,.25),rgba(93,94,255,.12)),#151f2d;
+ --border-gradient-onyx:linear-gradient(135deg,#2b91ed 0%,#24354b 55%,#354c68 100%);
+ --bg-gradient-jet:linear-gradient(135deg,#18283b 0%,#111a27 100%);
+ --bg-gradient-onyx:linear-gradient(135deg,#1c2d43 0%,#111a27 100%);
+}
+body{background:radial-gradient(ellipse at 78% 0%,rgba(25,112,214,.17),transparent 38%),#080e17}
+.sidebar,.main-content>article{background:linear-gradient(145deg,#152235 0%,#101925 65%,#0e1722 100%);border-color:#29415b;box-shadow:0 22px 55px rgba(0,0,0,.28)}
+.sidebar{border-color:#2b4662}
+.sidebar::before{background:linear-gradient(135deg,#188bff,#6b80ff)}
+.main-content>article{animation:noorixFade .32s ease}
+@keyframes noorixFade{from{opacity:.45;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+.navbar{background:rgba(19,31,47,.94);border-color:#2b4059;backdrop-filter:blur(16px)}
+.navbar-link{color:#b7c9dc;transition:color .2s,background .2s}
+.navbar-link:hover,.navbar-link.active{color:#68c6ff}
+.navbar-link.active{ text-shadow:0 0 18px rgba(49,157,255,.28)}
+.article-title{color:#f3f8ff}
+.article-title:after{background:linear-gradient(90deg,#168cff,#55c9ff,#837dff);width:58px;height:5px;border-radius:8px}
+.h3,.h4,.service-item-title,.project-title{color:#f0f6ff}
+.about-text p,.service-item-text,.timeline-text{color:#b3c3d5}
+.service-list{gap:18px}
+.service-item{background:linear-gradient(145deg,rgba(36,67,101,.72),rgba(18,31,47,.85));border:1px solid rgba(85,151,211,.2);border-radius:15px;padding:22px;box-shadow:0 10px 28px rgba(0,0,0,.12);transition:transform .25s,border-color .25s,box-shadow .25s}
+.service-item:hover{transform:translateY(-4px);border-color:rgba(69,180,255,.62);box-shadow:0 15px 35px rgba(10,102,201,.15)}
+.service-icon-box{color:#5fc4ff}
+.icon-box{background:linear-gradient(135deg,#1c8cff,#535de0);color:#fff;box-shadow:0 7px 22px rgba(22,140,255,.2)}
+.project-item{transition:transform .25s}
+.project-item:hover{transform:translateY(-4px)}
+.project-img{border:1px solid rgba(91,166,232,.2);border-radius:13px;overflow:hidden}
+.project-img img{transition:transform .35s}
+.project-item:hover .project-img img{transform:scale(1.045)}
+.project-title{margin-top:13px}
+.project-category{color:#7fb9eb}
+.project-visit,.form-btn{background:linear-gradient(105deg,#087fff,#347dff 55%,#675eea);box-shadow:0 8px 22px rgba(17,119,255,.22);color:white}
+.project-visit:hover,.form-btn:hover{filter:brightness(1.12);transform:translateY(-1px)}
+.timeline-item::before{background:#3aaaff;box-shadow:0 0 0 4px rgba(58,170,255,.12)}
+.timeline-item::after{background:#274c70}
+.timeline-list{border-left-color:#31506f}
+.title-wrapper .icon-box{background:linear-gradient(135deg,#087fff,#635ce8)}
+.form-input{background:#0c1724;border:1px solid #2b4560;color:#f2f7ff}
+.form-input:focus{border-color:#43b5ff;box-shadow:0 0 0 3px rgba(67,181,255,.1)}
+.form-input::placeholder{color:#829ab2}
+.sidebar .separator{background:#2a4058}
+.contact-link,address{color:#b5c8dc}
+.contact-link:hover{color:#62c7ff}
+.avatar-box{background:linear-gradient(145deg,#0b1e34,#153d65);border:1px solid #347fbe;box-shadow:0 10px 30px rgba(13,117,224,.2)}
+.avatar-box .brandmark span{color:#54c7ff;text-shadow:0 0 20px #178fff}
+.info-content .title{background:linear-gradient(100deg,#153c63,#273568);color:#9ed7ff;border:1px solid rgba(80,171,255,.2)}
+.filter-item button.active,.filter-item button:hover{color:#59c3ff}
+.filter-select{background:#101e2d;border-color:#2b4560;color:#d9e9f8}
+.select-list{background:#15263a;border-color:#2c4968}
+.select-item button{color:#c6d8e9}
+.select-item button:hover{background:#1b3b5d;color:#69c8ff}
+@media(max-width:580px){.service-item{padding:18px}}
